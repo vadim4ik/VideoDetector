@@ -11,7 +11,7 @@ cap = cv2.VideoCapture(0)
 
 # Відеозапис вихідного файлу
 output_path = "output.avi"
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
+fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 width, height = int(cap.get(3)), int(cap.get(4))
 out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
